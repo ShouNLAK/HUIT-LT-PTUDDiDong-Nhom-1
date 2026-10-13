@@ -82,10 +82,10 @@ class MainHubScreen extends StatelessWidget {
           _buildMemberButton(
             context: context,
             title: 'Thành viên 1 (TV1)',
-            subtitle: 'Đang phát triển',
+            subtitle: 'Đăng nhập, Đăng ký & Quản lý hồ sơ',
             icon: Icons.person_outline,
-            color: Colors.grey,
-            targetScreen: const TV1Screen(),
+            color: Colors.indigo,
+            targetScreen: const JobConnectApp(),
           ),
           _buildMemberButton(
             context: context,
