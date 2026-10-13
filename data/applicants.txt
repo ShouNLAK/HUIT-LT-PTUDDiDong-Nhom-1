@@ -1,0 +1,34 @@
+{"id":"app_1","name":"Nguyễn Văn An","appliedPosition":"Lập trình viên Flutter (Mobile App)","appliedDate":"12/10/2026","status":"pending","cvFileName":"NguyenVanAn_Flutter.pdf"}
+{"id":"app_2","name":"Trần Thị Bích","appliedPosition":"Lập trình viên Flutter (Mobile App)","appliedDate":"11/10/2026","status":"interview","cvFileName":"TranThiBich_CV.pdf"}
+{"id":"app_3","name":"Lê Hoàng Cường","appliedPosition":"Lập trình viên Flutter (Mobile App)","appliedDate":"10/10/2026","status":"accepted","cvFileName":"LeHoangCuong_CV.pdf"}
+{"id":"app_4","name":"Phạm Minh Dũng","appliedPosition":"Lập trình viên Flutter (Mobile App)","appliedDate":"09/10/2026","status":"pending","cvFileName":"PhamMinhDung_Resume.pdf"}
+{"id":"app_5","name":"Hoàng Thị Giang","appliedPosition":"Lập trình viên Flutter (Mobile App)","appliedDate":"08/10/2026","status":"rejected","cvFileName":"HoangThiGiang_CV.pdf"}
+{"id":"app_6","name":"Vũ Quốc Huy","appliedPosition":"Chuyên viên Phân tích Dữ liệu (Data Analyst)","appliedDate":"12/10/2026","status":"pending","cvFileName":"VuQuocHuy_DA.pdf"}
+{"id":"app_7","name":"Đỗ Hải Nam","appliedPosition":"Chuyên viên Phân tích Dữ liệu (Data Analyst)","appliedDate":"11/10/2026","status":"interview","cvFileName":"DoHaiNam_CV.pdf"}
+{"id":"app_8","name":"Bùi Phương Linh","appliedPosition":"Chuyên viên Phân tích Dữ liệu (Data Analyst)","appliedDate":"10/10/2026","status":"pending","cvFileName":"BuiPhuongLinh_CV.pdf"}
+{"id":"app_9","name":"Ngô Thanh Tùng","appliedPosition":"Chuyên viên Phân tích Dữ liệu (Data Analyst)","appliedDate":"09/10/2026","status":"accepted","cvFileName":"NgoThanhTung_Resume.pdf"}
+{"id":"app_10","name":"Dương Thị Mai","appliedPosition":"Chuyên viên Phân tích Dữ liệu (Data Analyst)","appliedDate":"08/10/2026","status":"pending","cvFileName":"DuongThiMai_CV.pdf"}
+{"id":"app_11","name":"Lý Kiến Quốc","appliedPosition":"Chuyên viên Phân tích Dữ liệu (Data Analyst)","appliedDate":"07/10/2026","status":"interview","cvFileName":"LyKienQuoc_CV.pdf"}
+{"id":"app_12","name":"Trịnh Bảo Trâm","appliedPosition":"Chuyên viên Phân tích Dữ liệu (Data Analyst)","appliedDate":"06/10/2026","status":"rejected","cvFileName":"TrinhBaoTram_CV.pdf"}
+{"id":"app_13","name":"Đặng Tuấn Anh","appliedPosition":"Chuyên viên Phân tích Dữ liệu (Data Analyst)","appliedDate":"05/10/2026","status":"pending","cvFileName":"DangTuanAnh_CV.pdf"}
+{"id":"app_14","name":"Phan Diệu Hoa","appliedPosition":"Thực tập sinh Thiết kế UI/UX Product","appliedDate":"12/10/2026","status":"pending","cvFileName":"PhanDieuHoa_Portfolio.pdf"}
+{"id":"app_15","name":"Võ Minh Khôi","appliedPosition":"Thực tập sinh Thiết kế UI/UX Product","appliedDate":"11/10/2026","status":"interview","cvFileName":"VoMinhKhoi_UIUX.pdf"}
+{"id":"app_16","name":"Hồ Quỳnh Nga","appliedPosition":"Thực tập sinh Thiết kế UI/UX Product","appliedDate":"11/10/2026","status":"accepted","cvFileName":"HoQuynhNga_CV.pdf"}
+{"id":"app_17","name":"Lương Thế Phong","appliedPosition":"Thực tập sinh Thiết kế UI/UX Product","appliedDate":"10/10/2026","status":"pending","cvFileName":"LuongThePhong_Portfolio.pdf"}
+{"id":"app_18","name":"Mai Ngọc Sơn","appliedPosition":"Thực tập sinh Thiết kế UI/UX Product","appliedDate":"09/10/2026","status":"interview","cvFileName":"MaiNgocSon_CV.pdf"}
+{"id":"app_19","name":"Tạ Thùy Trang","appliedPosition":"Thực tập sinh Thiết kế UI/UX Product","appliedDate":"08/10/2026","status":"rejected","cvFileName":"TaThuyTrang_Portfolio.pdf"}
+{"id":"app_20","name":"Cao Văn Vũ","appliedPosition":"Thực tập sinh Thiết kế UI/UX Product","appliedDate":"07/10/2026","status":"pending","cvFileName":"CaoVanVu_CV.pdf"}
+{"id":"app_21","name":"Trần Gia Hân","appliedPosition":"Thực tập sinh Thiết kế UI/UX Product","appliedDate":"06/10/2026","status":"interview","cvFileName":"TranGiaHan_Portfolio.pdf"}
+{"id":"app_22","name":"Lê Thanh Bình","appliedPosition":"Thực tập sinh Thiết kế UI/UX Product","appliedDate":"05/10/2026","status":"pending","cvFileName":"LeThanhBinh_CV.pdf"}
+{"id":"app_23","name":"Nguyễn Thảo Chi","appliedPosition":"Thực tập sinh Thiết kế UI/UX Product","appliedDate":"04/10/2026","status":"accepted","cvFileName":"NguyenThaoChi_Portfolio.pdf"}
+{"id":"app_24","name":"Phạm Đức Duy","appliedPosition":"Thực tập sinh Thiết kế UI/UX Product","appliedDate":"03/10/2026","status":"pending","cvFileName":"PhamDucDuy_CV.pdf"}
+{"id":"app_25","name":"Hoàng Yến Nhi","appliedPosition":"Thực tập sinh Thiết kế UI/UX Product","appliedDate":"02/10/2026","status":"interview","cvFileName":"HoangYenNhi_Portfolio.pdf"}
+{"id":"app_26","name":"Đoàn Nhật Quang","appliedPosition":"Trưởng nhóm Marketing Kỹ thuật số (Digital Lead)","appliedDate":"12/10/2026","status":"pending","cvFileName":"DoanNhatQuang_Marketing.pdf"}
+{"id":"app_27","name":"Chu Bảo Thư","appliedPosition":"Trưởng nhóm Marketing Kỹ thuật số (Digital Lead)","appliedDate":"10/10/2026","status":"interview","cvFileName":"ChuBaoThu_CV.pdf"}
+{"id":"app_28","name":"Vũ Đăng Khoa","appliedPosition":"Trưởng nhóm Marketing Kỹ thuật số (Digital Lead)","appliedDate":"08/10/2026","status":"accepted","cvFileName":"VuDangKhoa_Resume.pdf"}
+{"id":"app_29","name":"Lâm Hải Đăng","appliedPosition":"Lập trình viên Backend Java (Spring Boot)","appliedDate":"12/10/2026","status":"pending","cvFileName":"LamHaiDang_Java.pdf"}
+{"id":"app_30","name":"Dương Khánh Linh","appliedPosition":"Lập trình viên Backend Java (Spring Boot)","appliedDate":"11/10/2026","status":"interview","cvFileName":"DuongKhanhLinh_CV.pdf"}
+{"id":"app_31","name":"Phan Trí Dũng","appliedPosition":"Lập trình viên Backend Java (Spring Boot)","appliedDate":"09/10/2026","status":"pending","cvFileName":"PhanTriDung_Resume.pdf"}
+{"id":"app_32","name":"Hà Kim Oanh","appliedPosition":"Lập trình viên Backend Java (Spring Boot)","appliedDate":"08/10/2026","status":"accepted","cvFileName":"HaKimOanh_CV.pdf"}
+{"id":"app_33","name":"Nguyễn Tấn Phát","appliedPosition":"Lập trình viên Backend Java (Spring Boot)","appliedDate":"06/10/2026","status":"rejected","cvFileName":"NguyenTanPhat_CV.pdf"}
+{"id":"app_34","name":"Bạch Tuyết Mai","appliedPosition":"Lập trình viên Backend Java (Spring Boot)","appliedDate":"04/10/2026","status":"interview","cvFileName":"BachTuyetMai_Java.pdf"}
