@@ -98,7 +98,7 @@ class MainHubScreen extends StatelessWidget {
           _buildMemberButton(
             context: context,
             title: 'Thành viên 3 (TV3)',
-            subtitle: 'Đang phát triển',
+            subtitle: 'Ứng tuyển & Theo dõi',
             icon: Icons.person_outline,
             color: Colors.grey,
             targetScreen: const TV3Screen(),
