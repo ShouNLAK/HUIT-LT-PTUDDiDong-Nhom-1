@@ -275,7 +275,9 @@ class _ApplicationDetailScreenState extends State<ApplicationDetailScreen> {
                   _buildTimelineItem(
                     title: app.status == ApplicationStatus.rejected
                         ? 'Bị từ chối'
-                        : 'Trúng tuyển',
+                        : app.status == ApplicationStatus.accepted
+                        ? 'Trúng tuyển'
+                        : 'Chờ kết quả',
                     time: app.status == ApplicationStatus.accepted
                         ? 'Chúc mừng! Bạn đã trúng tuyển'
                         : (app.status == ApplicationStatus.rejected
