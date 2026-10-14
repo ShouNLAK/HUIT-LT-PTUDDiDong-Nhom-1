@@ -36,13 +36,13 @@ class AppService {
   }
 
   static Future<String?> pickCvFile() async {
-    final result = await FilePicker.pickFiles(
+    final result = await FilePicker.platform.pickFiles(
       type: FileType.custom,
       allowedExtensions: ['pdf', 'doc', 'docx'],
     );
 
-    if (result.isNotEmpty) {
-      return result.first.name;
+    if (result != null && result.files.isNotEmpty) {
+      return result.files.first.name;
     }
     return null;
   }
