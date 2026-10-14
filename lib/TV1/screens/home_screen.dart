@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/models.dart';
 import '../services/auth_service.dart';
+import '../../TV2/screens/explore/home_screen.dart' as tv2;
 import '../../TV4/screens/employer/employer_dashboard_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -82,6 +83,21 @@ class HomeScreen extends StatelessWidget {
                           : 'Khu vực đăng tin, quản lý tin tuyển dụng và xem hồ sơ ứng viên.',
                       style: const TextStyle(color: Colors.black54),
                     ),
+                    if (isCandidate) ...[
+                      const SizedBox(height: 12),
+                      ElevatedButton.icon(
+                        icon: const Icon(Icons.search),
+                        label: const Text('Khám phá & Tìm việc làm (TV2)'),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const tv2.HomeScreen(),
+                            ),
+                          );
+                        },
+                      ),
+                    ],
                     if (!isCandidate) ...[
                       const SizedBox(height: 12),
                       ElevatedButton.icon(

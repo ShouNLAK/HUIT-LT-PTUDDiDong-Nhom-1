@@ -90,9 +90,9 @@ class MainHubScreen extends StatelessWidget {
           _buildMemberButton(
             context: context,
             title: 'Thành viên 2 (TV2)',
-            subtitle: 'Đang phát triển',
-            icon: Icons.person_outline,
-            color: Colors.grey,
+            subtitle: 'Tìm kiếm & Khám phá việc làm',
+            icon: Icons.search,
+            color: Colors.teal,
             targetScreen: const TV2Screen(),
           ),
           _buildMemberButton(

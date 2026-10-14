@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/explore/home_screen.dart';
 
 void main() {
   runApp(const TV2App());
@@ -9,9 +10,14 @@ class TV2App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title: 'JobConnect - TV2',
       debugShowCheckedModeBanner: false,
-      home: TV2Screen(),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF1565C0)),
+      ),
+      home: const HomeScreen(),
     );
   }
 }
@@ -21,16 +27,6 @@ class TV2Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Thành viên 2'),
-      ),
-      body: const Center(
-        child: Text(
-          'Mô-đun của Thành viên 2 đang phát triển',
-          style: TextStyle(fontSize: 16),
-        ),
-      ),
-    );
+    return const HomeScreen();
   }
 }
