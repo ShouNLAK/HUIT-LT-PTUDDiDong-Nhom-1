@@ -42,6 +42,7 @@ class _ApplicationFormScreenState extends State<ApplicationFormScreen> {
   }
 
   void _submitApplication() {
+    // 1. Kiểm tra chọn file CV
     if (_selectedFileName == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
@@ -52,6 +53,55 @@ class _ApplicationFormScreenState extends State<ApplicationFormScreen> {
       return;
     }
 
+    // 2. RÀNG BUỘC: Kiểm tra xem đã ứng tuyển công việc này chưa
+    final bool isAlreadyApplied = mockApplications.any(
+      (app) =>
+          app.jobTitle == widget.jobTitle &&
+          app.companyName == widget.companyName,
+    );
+
+    if (isAlreadyApplied) {
+      showDialog(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+          title: const Row(
+            children: [
+              Icon(Icons.info_outline, color: Colors.orange),
+              SizedBox(width: 8),
+              Text(
+                'Thông báo',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+          content: Text(
+            'Bạn đã nộp đơn ứng tuyển vị trí "${widget.jobTitle}" tại ${widget.companyName} trước đó rồi!',
+            style: const TextStyle(color: Color(0xFF475569)),
+          ),
+          actions: [
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF2563EB),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text(
+                'Đã hiểu',
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ],
+        ),
+      );
+      return;
+    }
+
+    // 3. Tiến hành lưu đơn nếu chưa từng nộp
     if (_formKey.currentState!.validate()) {
       final newApp = Application(
         id: 'APP${DateTime.now().millisecondsSinceEpoch}',
@@ -63,7 +113,7 @@ class _ApplicationFormScreenState extends State<ApplicationFormScreen> {
         jobType: widget.jobType,
         appliedDate:
             '${DateTime.now().day}/${DateTime.now().month}/${DateTime.now().year}',
-        status: ApplicationStatus.pending, // Cập nhật sang pending
+        status: ApplicationStatus.pending,
         cvFileName: _selectedFileName!,
         coverLetter: _coverLetterController.text,
       );
