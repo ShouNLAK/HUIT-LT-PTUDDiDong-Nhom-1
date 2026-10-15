@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../models/job.dart';
 import '../../services/saved_jobs_store.dart';
 import '../../../TV3/application/screens/application_form_screen.dart';
+
 class JobDetailScreen extends StatelessWidget {
   final Job job;
   const JobDetailScreen({super.key, required this.job});
@@ -80,37 +81,36 @@ class JobDetailScreen extends StatelessWidget {
             ),
             const SizedBox(width: 12),
             Expanded(
-                child: FilledButton(
-                  onPressed: () async {
-                    final result = await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ApplicationFormScreen(
-                          jobTitle: job.title, 
-                          companyName: job.company, 
-                          salaryText: job.salaryText,
-                          location: job.location,
-                          jobType: job.jobType,
+              child: FilledButton(
+                onPressed: () async {
+                  final result = await Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ApplicationFormScreen(
+                        jobTitle: job.title,
+                        companyName: job.company,
+                        salaryText: job.salaryText,
+                        location: job.location,
+                        jobType: job.jobType,
+                      ),
+                    ),
+                  );
+
+                  if (result == true && context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text(
+                          'Đơn ứng tuyển của bạn đã được gửi thành công!',
                         ),
+                        backgroundColor: Colors.green,
+                        duration: Duration(seconds: 2),
                       ),
                     );
-
-                    // Khi nộp đơn thành công và quay về, hiển thị SnackBar chúc mừng
-                    if (result == true && context.mounted) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text(
-                            'Đơn ứng tuyển của bạn đã được gửi thành công!',
-                          ),
-                          backgroundColor: Colors.green,
-                          duration: Duration(seconds: 2),
-                        ),
-                      );
-                    }
-                  },
-                  child: const Text('Ứng tuyển ngay'),
-                ),
+                  }
+                },
+                child: const Text('Ứng tuyển ngay'),
               ),
+            ),
           ]),
         ),
       ),

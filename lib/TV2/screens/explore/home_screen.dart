@@ -6,6 +6,7 @@ import '../../services/job_explore_file_service.dart';
 import '../../services/saved_jobs_store.dart';
 import '../../widgets/job_card.dart';
 import 'job_detail_screen.dart';
+import 'saved_jobs_screen.dart';
 import 'search_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -43,6 +44,14 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('JobConnect',
             style: TextStyle(fontWeight: FontWeight.bold)),
         actions: [
+          IconButton(
+            tooltip: 'Việc đã lưu',
+            icon: const Icon(Icons.bookmark_border),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const SavedJobsScreen()),
+            ),
+          ),
           IconButton(
             icon: const Icon(Icons.notifications_none),
             onPressed: () {},
