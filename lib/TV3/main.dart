@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:huit_lt_ptuddidong_nhom_1/TV3/application/screens/application_list_screen.dart';
 void main() {
   runApp(const TV3App());
 }
@@ -21,16 +21,6 @@ class TV3Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Thành viên 3'),
-      ),
-      body: const Center(
-        child: Text(
-          'Mô-đun của Thành viên 3 đang phát triển',
-          style: TextStyle(fontSize: 16),
-        ),
-      ),
-    );
+    return const ApplicationListScreen();
   }
 }

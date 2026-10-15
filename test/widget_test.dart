@@ -1,11 +1,30 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:huit_lt_ptuddidong_nhom_1/main.dart';
+import 'package:huit_lt_ptuddidong_nhom_1/TV1/main.dart';
+import 'package:huit_lt_ptuddidong_nhom_1/TV2/main.dart';
 
 void main() {
   testWidgets('Kiem tra khoi chay MainHubScreen', (WidgetTester tester) async {
     await tester.pumpWidget(const MyApp());
     expect(find.text('JobConnect - Tiến độ các TV'), findsOneWidget);
+    expect(find.text('Thành viên 1 (TV1)'), findsOneWidget);
+    expect(find.text('Thành viên 2 (TV2)'), findsOneWidget);
     expect(find.text('Thành viên 4 (TV4)'), findsOneWidget);
     expect(find.text('Thành viên 5 (TV5)'), findsOneWidget);
+  });
+
+  testWidgets('Kiem tra khoi chay TV1 JobConnectApp', (WidgetTester tester) async {
+    await tester.pumpWidget(const JobConnectApp());
+    expect(find.text('JobConnect'), findsOneWidget);
+    expect(find.text('Tìm việc và tuyển dụng'), findsOneWidget);
+    await tester.pump(const Duration(seconds: 2));
+    await tester.pumpAndSettle();
+    expect(find.text('Chào mừng bạn quay lại JobConnect'), findsOneWidget);
+  });
+
+  testWidgets('Kiem tra khoi chay TV2App', (WidgetTester tester) async {
+    await tester.pumpWidget(const TV2App());
+    expect(find.text('Việc làm mới nhất'), findsOneWidget);
+    expect(find.text('Tìm việc, công ty, ngành...'), findsOneWidget);
   });
 }
